@@ -3,8 +3,8 @@ spring:
     name: eureka-server
   profiles:
     active: stage
-  main:
-    allow-bean-definition-overriding: true
+  #main:
+   # allow-bean-definition-overriding: true
 
 
 
