@@ -24,8 +24,7 @@ eureka:
     service-url:
       default-zone: http://${eureka.instance.hostname}:${server.port}/eureka
       
-spring:
-  text: github-localhost-test
+name: local-YAML
   
 ---
 spring:
@@ -42,7 +41,7 @@ eureka:
     service-url:
       default-zone: http://${eureka.instance.hostname}:${server.port}/eureka
       
-
+name: stage-YAML
 
 ---
 spring:
@@ -59,3 +58,4 @@ eureka:
     service-url:
       default-zone: http://${eureka.instance.hostname}:${server.port}/eureka
 
+name: prod-YAML
