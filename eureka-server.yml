@@ -24,8 +24,7 @@ eureka:
     service-url:
       default-zone: http://${eureka.instance.hostname}:${server.port}/eureka
       
-simple:
-  text: github-test-localhost
+
   
 ---
 spring:
@@ -42,8 +41,7 @@ eureka:
     service-url:
       default-zone: http://${eureka.instance.hostname}:${server.port}/eureka
       
- simple:
-  text: github-test-stage
+
 
 ---
 spring:
@@ -59,5 +57,4 @@ eureka:
     fetch-registry: false
     service-url:
       default-zone: http://${eureka.instance.hostname}:${server.port}/eureka
- simple:
-  text: github-test-prod
+
