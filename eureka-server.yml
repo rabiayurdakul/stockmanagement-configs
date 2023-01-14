@@ -2,7 +2,7 @@ spring:
   application:
     name: eureka-server
   profiles:
-    active: prod
+    active: localhost
   main:
     allow-bean-definition-overriding: true
 
