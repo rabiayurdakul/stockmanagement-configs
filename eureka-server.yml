@@ -6,8 +6,7 @@ spring:
   main:
     allow-bean-definition-overriding: true
 
-server:
-  port: 8761
+
 
 ---
 spring:
@@ -25,7 +24,8 @@ eureka:
       default-zone: http://${eureka.instance.hostname}:${server.port}/eureka
       
 name: local-YAML
-  
+server:
+  port: 8763  
 ---
 spring:
   profiles: stage
@@ -42,7 +42,8 @@ eureka:
       default-zone: http://${eureka.instance.hostname}:${server.port}/eureka
       
 name: stage-YAML
-
+server:
+  port: 8764
 ---
 spring:
   profiles: prod
@@ -59,3 +60,5 @@ eureka:
       default-zone: http://${eureka.instance.hostname}:${server.port}/eureka
 
 name: prod-YAML
+server:
+  port: 8765
