@@ -2,14 +2,14 @@ spring:
   application:
     name: eureka-server
   profiles:
-    active: localhost
+    active: prod
 
 server:
   port: 8761
 
 ---
 spring:
-  profiles: localhost
+  profiles: prod
 
 eureka:
   instance:
