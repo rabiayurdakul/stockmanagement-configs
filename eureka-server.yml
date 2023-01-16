@@ -11,6 +11,9 @@ spring:
 ---
 spring:
   profiles: localhost
+
+info:
+  componenet: Github
   
 eureka:
   instance:
