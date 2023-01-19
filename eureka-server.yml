@@ -3,18 +3,14 @@ spring:
     name: eureka-server
   profiles:
     active: localhost
-  #main:
-   # allow-bean-definition-overriding: true
-
-
 
 ---
 spring:
   profiles: localhost
 
 info:
-  component: Hello - local
-  
+  componenet: Eureka Server - Github - Localhost
+
 eureka:
   instance:
     appname: eureka-server
@@ -25,34 +21,15 @@ eureka:
     fetch-registry: false
     service-url:
       default-zone: http://${eureka.instance.hostname}:${server.port}/eureka
-      
-name: local-YAML
+
 server:
-  port: 8763  
+  port: 8763
 ---
 spring:
   profiles: stage
 
-eureka:
-  instance:
-    appname: eureka-server
-    hostname: eureka-server
-    prefer-ip-address: true
-  client:
-    register-with-eureka: false
-    fetch-registry: false
-    service-url:
-      default-zone: http://${eureka.instance.hostname}:${server.port}/eureka
- 
 info:
-  component: Hello-stage
-  
-name: stage-YAML
-server:
-  port: 8764
----
-spring:
-  profiles: prod
+  componenet: Eureka Server - Github - Stage
 
 eureka:
   instance:
@@ -65,6 +42,5 @@ eureka:
     service-url:
       default-zone: http://${eureka.instance.hostname}:${server.port}/eureka
 
-name: prod-YAML
 server:
   port: 8765
