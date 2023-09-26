@@ -6,7 +6,9 @@ spring:
 
 ---
 spring:
-  profiles: localhost
+  config:
+    activate:
+      on-profile: localhost
 
 info:
   componenet: Eureka Server - Github - Localhost
@@ -26,7 +28,9 @@ server:
   port: 8763
 ---
 spring:
-  profiles: stage
+  config:
+    activate:
+      on-profile: stage
 
 info:
   componenet: Eureka Server - Github - Stage

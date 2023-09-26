@@ -17,7 +17,9 @@ logging:
     com.eleiatech: DEBUG
 ---
 spring:
-  profiles: localhost
+  config:
+    active:
+      on-profile: localhost
   cloud:
     config:
       uri: http://localhost:8888
@@ -42,7 +44,9 @@ eureka:
 
 ---
 spring:
-  profiles: stage
+  config:
+    active:
+      on-profile: stage
   jpa:
     hibernate:
       ddl-auto: update
